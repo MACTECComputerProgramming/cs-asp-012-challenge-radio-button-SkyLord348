@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:CS_ASP_012CheckBoxChallange"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="textBoxOne">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FF0046FF" Offset="0.243"/>
+                <GradientStop Color="Black" Offset="0.009"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <RadioButton x:Name="radioButtonPencil" Content="Pencil" HorizontalAlignment="Left" Margin="169,129,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
+        <RadioButton x:Name="radioButtonPen" Content="Pen" HorizontalAlignment="Left" Margin="169,149,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
+        <RadioButton x:Name="radioButtonPhone" Content="Phone" HorizontalAlignment="Left" Margin="169,169,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
+        <RadioButton x:Name="radioButtonTablet" Content="Tablet" HorizontalAlignment="Left" Margin="169,189,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
+        <Button x:Name="buttonOne" Content="Push Me!" HorizontalAlignment="Left" Margin="169,217,0,0" VerticalAlignment="Top" Width="87" Height="41" FontSize="18" FontWeight="Bold" Click="buttonOne_Click" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+        <Label x:Name="labelOutput" Content="Pick One!" HorizontalAlignment="Left" Margin="169,272,0,0" VerticalAlignment="Top" Height="41" Width="352" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="labelOne" Content="Choose which one you normally use" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Top" Width="315" FontSize="18" FontWeight="Bold" Foreground="White"/>
 
     </Grid>
 </Window>
