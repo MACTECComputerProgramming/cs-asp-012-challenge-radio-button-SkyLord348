@@ -57,7 +57,7 @@ namespace CS_ASP_012CheckBoxChallange
 
                 labelOutput.Content = "Pen! Great, reliable choice!";
 
-                // What goes here Lucas?
+                
                 myPen.Opacity = 100;
 
             }
