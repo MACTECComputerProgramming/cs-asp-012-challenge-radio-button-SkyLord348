@@ -33,10 +33,10 @@ namespace CS_ASP_012CheckBoxChallange
         
         private void buttonOne_Click(object sender, RoutedEventArgs e)
         {
-
-            labelOutput.Content = "You must pick one!";
-
-
+            myPen.Opacity = 0;
+            myPencil.Opacity = 0;
+            myPhone.Opacity = 0;
+            myTablet.Opacity = 0;
 
             if (radioButtonPencil.IsChecked == true)
             {
@@ -44,61 +44,35 @@ namespace CS_ASP_012CheckBoxChallange
                 labelOutput.Content = "Pencil! The old classic choice!";
 
                 myPencil.Opacity = 100;
-                
             }
-            else {
-
-                myPencil.Opacity = 0;
-            
-            
-            }
-            if (radioButtonPen.IsChecked == true)
+            else if (radioButtonPen.IsChecked == true)
             {
-
                 labelOutput.Content = "Pen! Great, reliable choice!";
 
                 myPen.Opacity = 100;
 
             }
-            else
+            else if (radioButtonPhone.IsChecked == true)
             {
-                myPen.Opacity = 0;
-
-            }
-            if (radioButtonPhone.IsChecked == true)
-            {
-
                 labelOutput.Content = "Phone! Amazing, modern choice!";
 
                 myPhone.Opacity = 100;
-
             }
-            else
+            else if (radioButtonTablet.IsChecked == true)
             {
-                myPhone.Opacity = 0;
-
-            }
-            if (radioButtonTablet.IsChecked == true)
-            {
-
                 labelOutput.Content = "Tablet! Interesting and futuristic choice!";
 
                 myTablet.Opacity = 100;
+
             }
             else
             {
-                myTablet.Opacity = 0;
-
+                labelOutput.Content = "You must pick one!";
             }
 
 
-
-
-
-
-
-
-
+            
+            
         }
     }
 }

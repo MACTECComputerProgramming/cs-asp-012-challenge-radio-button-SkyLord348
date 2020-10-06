@@ -13,17 +13,17 @@
                 <GradientStop Color="#FF2C2CE2" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <RadioButton x:Name="radioButtonPencil" Content="Pencil" HorizontalAlignment="Left" Margin="169,129,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-        <RadioButton x:Name="radioButtonPen" Content="Pen" HorizontalAlignment="Left" Margin="169,149,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-        <RadioButton x:Name="radioButtonPhone" Content="Phone" HorizontalAlignment="Left" Margin="169,169,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-        <RadioButton x:Name="radioButtonTablet" Content="Tablet" HorizontalAlignment="Left" Margin="169,189,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
+        <RadioButton x:Name="radioButtonPencil" Content="Pencil" HorizontalAlignment="Left" Margin="169,129,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" GroupName="radioButtonChoices"/>
+        <RadioButton x:Name="radioButtonPen" Content="Pen" HorizontalAlignment="Left" Margin="169,149,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" GroupName="radioButtonChoices"/>
+        <RadioButton x:Name="radioButtonPhone" Content="Phone" HorizontalAlignment="Left" Margin="169,169,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" GroupName="radioButtonChoices"/>
+        <RadioButton x:Name="radioButtonTablet" Content="Tablet" HorizontalAlignment="Left" Margin="169,189,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" GroupName="radioButtonChoices"/>
         <Button x:Name="buttonOne" Content="Push Me!" HorizontalAlignment="Left" Margin="169,217,0,0" VerticalAlignment="Top" Width="87" Height="41" FontSize="18" FontWeight="Bold" Click="buttonOne_Click" BorderBrush="{x:Null}" Background="#FF767676" Foreground="White"/>
         <Label x:Name="labelOutput" Content="Pick One!" HorizontalAlignment="Left" Margin="169,272,0,0" VerticalAlignment="Top" Height="41" Width="352" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="Black" BorderThickness="1,1,1,1"/>
         <Label x:Name="labelOne" Content="Choose which one you normally use" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Top" Width="315" FontSize="18" FontWeight="Bold" Foreground="White"/>
-        <Image x:Name="myPen" HorizontalAlignment="Left" Height="100" Margin="339,146,0,0" VerticalAlignment="Top" Width="100" Source="pen.png" RenderTransformOrigin="0.628,0.39"/>
-        <Image x:Name="myPencil" HorizontalAlignment="Left" Height="100" Margin="338,145,0,0" VerticalAlignment="Top" Width="100" Source="pencil.png"/>
-        <Image x:Name="myPhone" HorizontalAlignment="Left" Height="100" Margin="329,145,0,0" VerticalAlignment="Top" Width="100" Source="phone.png"/>
-        <Image x:Name="myTablet" HorizontalAlignment="Left" Height="100" Margin="330,145,0,0" VerticalAlignment="Top" Width="100" Source="tablet.png"/>
+        <Image x:Name="myPencil" HorizontalAlignment="Left" Height="100" Margin="348,147,0,0" VerticalAlignment="Top" Width="100" Source="pencil.png"/>
+        <Image x:Name="myPen" HorizontalAlignment="Center" Height="100" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Source="pen.png"/>
+        <Image x:Name="myPhone" HorizontalAlignment="Center" Height="100" Margin="0,147,0,0" VerticalAlignment="Top" Width="100" Source="phone.png"/>
+        <Image x:Name="myTablet" HorizontalAlignment="Center" Height="100" Margin="0,140,0,0" VerticalAlignment="Top" Width="100" Source="tablet.png"/>
 
     </Grid>
 </Window>
