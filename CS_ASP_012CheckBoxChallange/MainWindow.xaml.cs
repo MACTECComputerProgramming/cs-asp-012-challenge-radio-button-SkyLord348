@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,67 @@ namespace CS_ASP_012CheckBoxChallange
         public MainWindow()
         {
             InitializeComponent();
+        }
+        
+        private void buttonOne_Click(object sender, RoutedEventArgs e)
+        {
+
+            labelOutput.Content = "You must pick one!";
+
+
+
+            if (radioButtonPencil.IsChecked == true)
+            {
+
+                labelOutput.Content = "Pencil! The old classic choice!";
+
+                
+
+                
+
+            }
+            
+            if (radioButtonPen.IsChecked == true)
+            {
+
+                labelOutput.Content = "Pen! Great, reliable choice!";
+
+                // So Lucas, what I had to do was delete the images out of MainWindow.xaml. 
+                //Then add back in a image from the toolbox
+                // Tie the Image to the source the way I did in the video. 
+                //Drag and Drop will not work. Mr. Wilson
+
+            }
+
+            if (radioButtonPhone.IsChecked == true)
+            {
+
+                labelOutput.Content = "Phone! Amazing, modern choice!";
+
+
+
+            }
+
+            if (radioButtonTablet.IsChecked == true)
+            {
+
+                labelOutput.Content = "Tablet! Interesting and futuristic choice!";
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
